@@ -1,15 +1,11 @@
-#include <ctype.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
-	if (!(c >= 48 && c <= 57))
-		return (0);
-	else
-		return (1);
+	return(c >= 48 && c <= 57);
 }
-int	main(void)
+/*int	main(void)
 {
-	printf("my function: %d\n", ft_isdigit(128));
-	printf("real function: %d", isdigit(128));
-}
+	printf("my function: %d\n", ft_isdigit(48));
+	printf("real function: %d", isdigit(48));
+}*/
