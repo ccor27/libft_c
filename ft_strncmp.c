@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int	ft_strncmp(char *s1, char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
@@ -13,11 +13,12 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
       return(0);
 	return (s1[i] - s2[i]);
 }
+/*
 int	main(void)
 {
 	char s1[] = "abc";
 	char s2[] = "ab";
-	printf("value of real function: %d\n", strncmp(s1, s2, 3));
-	printf("value of own function: %d", ft_strncmp(s1, s2, 3));
+	printf("value of real function: %d\n", strncmp(s1, s2, 5));
+	printf("value of own function: %d", ft_strncmp(s1, s2, 5));
 	return (0);
-}
+}*/

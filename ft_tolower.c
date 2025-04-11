@@ -7,9 +7,9 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-
+/*
 int main(void)
 {
     printf("value of the real funtion: %c\n", tolower(91));
     printf("value of the own funtion: %c", ft_tolower(91));
-}
+}*/

@@ -7,9 +7,9 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
+/*
 int main(void)
 {
     printf("value of the real funtion: %c\n", toupper(91));
     printf("value of the own funtion: %c", ft_toupper(91));
-}
+}*/
