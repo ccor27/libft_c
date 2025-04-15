@@ -33,8 +33,8 @@ int main(void)
     //either num elements or type's element is 0
     void *zero_size_test_own =ft_calloc(0,2);
     void *zero_size_test_original =calloc(0, 2);
-    printf("test_zero_size_custom (overflow): %p\n",zero_size_test_own);
-    printf("test_zero_size_original (overflow): %p\n",zero_size_test_original);
+    printf("test_zero_size_custom (zero size): %p\n",zero_size_test_own);
+    printf("test_zero_size_original (zero size): %p\n",zero_size_test_original);
     free(zero_size_test_original);
     free(zero_size_test_own);
 
@@ -50,8 +50,8 @@ int main(void)
     n = 1000000;
     void *zero_big_size_test_own =ft_calloc(n, sizeof(char));
     void *zero_big_size_test_original =calloc(n, sizeof(char));
-    printf("test_big_size_custom (overflow): %p\n",zero_big_size_test_own);
-    printf("test_big_size_original (overflow): %p\n",zero_big_size_test_original);
+    printf("test_big_size_custom (big size): %p\n",zero_big_size_test_own);
+    printf("test_big_size_original (big size): %p\n",zero_big_size_test_original);
     free(zero_big_size_test_original);
     free(zero_big_size_test_own);
 

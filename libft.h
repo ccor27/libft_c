@@ -5,8 +5,6 @@
 # include <limits.h>
 # include <stdio.h>
 # include <stdlib.h>
-# include <stdlib.h>
-
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
