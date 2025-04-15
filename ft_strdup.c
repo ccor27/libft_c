@@ -5,7 +5,7 @@ char	*ft_strdup(const char *s)
 	char	*s_copy;
 	size_t	s_size;
 
-	// verify if the s is not null, if it so return null
+	// verify if the s is not null, if it so return null, but the original one does not do this!
 	if (s == NULL)
 		return (NULL);
 	s_size = ft_strlen(s);
