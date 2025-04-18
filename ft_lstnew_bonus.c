@@ -1,5 +1,6 @@
 #include "libft.h"
 
+/*Function to create a new node */
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;
@@ -7,7 +8,7 @@ t_list	*ft_lstnew(void *content)
 	new_node = malloc(sizeof(t_list));
 	if (!new_node)
 		return (NULL);
-	new_node->content = connect;
+	new_node->content = content;
 	new_node->next = NULL;
 	return (new_node);
 }

@@ -1,7 +1,9 @@
 #include "libft.h"
 
+/*Function to know if a character is either a digit or a letter*/
 int ft_isalnum(int c)
 {
+    //using existing functions, we make the validation
     if(ft_isalpha(c) || ft_isdigit(c))
        return(8);
     else
