@@ -12,15 +12,14 @@
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	char	*s_copy;
-	size_t	s_size;
-
-	s_size = ft_strlen(s);
-	s_copy = malloc((s_size + 1) * sizeof(char));
-	if (!s_copy)
-		return (NULL);
-	ft_memcpy(s_copy, s, s_size + 1);
-	return (s_copy);
+	if (lst && f)
+	{
+		while (lst)
+		{
+			f(lst->content);
+			lst = lst->next;
+		}
+	}
 }

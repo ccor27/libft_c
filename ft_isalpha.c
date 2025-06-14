@@ -1,17 +1,19 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crosorio <crosorio@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/09 18:43:07 by crosorio          #+#    #+#             */
+/*   Updated: 2025/04/15 09:56:28 by crosorio         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-/*Function to know if a character is a letter both in uppe case and lower case*/
 int	ft_isalpha(int c)
 {
-	//validate if the character isn't the range a-z and A-Z
-	if (!(c >= 97 && c <= 122) && !(c >= 65 && c <= 90))
+	if (!(c >= 'a' && c <= 'z') && !(c >= 'A' && c <= 'Z'))
 		return (0);
 	else
-		return (1024);
+		return (1);
 }
-/*
-int	main(void)
-{
-	printf("my function: %d\n", ft_isalpha('a'));
-	printf("real function: %d", isalpha('a'));
-}*/

@@ -1,17 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crosorio <crosorio@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/09 18:38:46 by crosorio          #+#    #+#             */
+/*   Updated: 2025/04/15 09:11:12 by crosorio         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-/*Function to know if a character is either a digit or a letter*/
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    //using existing functions, we make the validation
-    if(ft_isalpha(c) || ft_isdigit(c))
-       return(8);
-    else
-       return(0);
+	return ((ft_isdigit(c) || ft_isalpha(c)));
 }
-/*
-int main(void)
-{
-    printf("value of the real function: %d\n",isalnum(91));
-    printf("value of the own function: %d",ft_isalnum(91));
-}*/

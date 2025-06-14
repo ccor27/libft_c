@@ -1,9 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crosorio <crosorio@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/15 09:26:22 by crosorio          #+#    #+#             */
+/*   Updated: 2025/04/15 10:03:33 by crosorio         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-/*Fucntion to set n position with 0*/
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-        //we use the ft_memset to reuse code
-        //sending the value of zero in ascii
-        ft_memset(s,0x00,n);
+	ft_memset(s, 0x00, n);
 }

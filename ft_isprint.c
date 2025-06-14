@@ -1,17 +1,19 @@
-#include <stdio.h>
-#include <ctype.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crosorio <crosorio@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/09 18:46:12 by crosorio          #+#    #+#             */
+/*   Updated: 2025/04/15 09:56:56 by crosorio         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-/*Function to know if the character is a printable one*/
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c < 32 || c > 126)
 		return (0);
 	else
 		return (1);
 }
-/*
-int	main(void)
-{
-	printf("my function: %d\n", ft_isprint(32));
-	printf("real function: %d", isprint(32));
-}*/

@@ -1,6 +1,15 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crosorio <crosorio@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/09 18:44:45 by crosorio          #+#    #+#             */
+/*   Updated: 2025/04/15 09:56:38 by crosorio         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-/*Function  to know is the int is a valid ascii*/
 int	ft_isascii(int c)
 {
 	if (!(c >= 0 && c <= 127))
@@ -8,9 +17,3 @@ int	ft_isascii(int c)
 	else
 		return (1);
 }
-/*
-int	main(void)
-{
-	printf("value of the real function: %d\n", isascii(97));
-	printf("value of the own function: %d", ft_isascii(97));
-}*/

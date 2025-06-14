@@ -1,7 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crosorio <crosorio@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/15 15:23:56 by crosorio          #+#    #+#             */
+/*   Updated: 2025/04/15 15:31:24 by crosorio         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-/*Function to get the position of the first ocurrence of the char in the string*/
-void *memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;
 	unsigned char	*s_copy;
@@ -15,5 +26,4 @@ void *memchr(const void *s, int c, size_t n)
 		i++;
 	}
 	return (0);
-
 }

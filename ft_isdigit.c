@@ -1,13 +1,16 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crosorio <crosorio@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/09 18:45:31 by crosorio          #+#    #+#             */
+/*   Updated: 2025/04/15 09:56:49 by crosorio         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-/*Function to know if a character is a digit*/
 int	ft_isdigit(int c)
 {
-	return(c >= 48 && c <= 57);
+	return (c >= '0' && c <= '9');
 }
-/*
-int	main(void)
-{
-	printf("my function: %d\n", ft_isdigit(48));
-	printf("real function: %d", isdigit(48));
-}*/

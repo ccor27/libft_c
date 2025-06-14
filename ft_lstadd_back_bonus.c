@@ -1,11 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: crosorio <crosorio@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/15 09:43:53 by crosorio          #+#    #+#             */
+/*   Updated: 2025/04/15 11:47:16 by crosorio         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-/*Function to add a new node in the end of the list*/
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*aux;
 
-	//if the list is empty, the new node will be the first one
 	if (!*lst)
 		*lst = new;
 	else
@@ -13,10 +23,9 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		aux = *lst;
 		if (aux)
 		{
-			//loop to reach the last node
 			while (aux->next)
 				aux = aux->next;
-			aux->next = new;//add the new node
+			aux->next = new;
 		}
 	}
 }

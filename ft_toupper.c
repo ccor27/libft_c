@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cristian <cristian@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/15 09:33:28 by crosorio          #+#    #+#             */
+/*   Updated: 2025/04/17 10:13:37 by cristian         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_toupper(int c)
@@ -7,9 +19,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-/*
-int main(void)
-{
-    printf("value of the real funtion: %c\n", toupper(91));
-    printf("value of the own funtion: %c", ft_toupper(91));
-}*/
