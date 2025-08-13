@@ -40,3 +40,4 @@ typedef struct s_list
 ## New features
 
 * **printf:** function that works as print() function but just wiht numbers, strings and pointers
+* **gnl:** function in C thta is able to read a line from a file descriptor of file, including \n. Each call of the function should return the next line of the file until the end of it be reached o there be an error.
